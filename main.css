@@ -3,7 +3,7 @@
     margin: 3px;
 }
 :root{
-  --pink: #ff74a4;
+    --pink: #ff74a4;
     --violet: #9f6ea3;
     --lightblack: #515C6F;
     --white: #ffffff;
@@ -17,14 +17,15 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    max-height: 90vh;
 }
 .wrapper{
   width: 360px;
   overflow: hidden;
   position: relative;
   border-radius: 15px;
-  padding: 25px 30px;
+  bottom: -25px;
+  padding: 20px 30px;
   background: linear-gradient( #1b004b 0%, #9120bd);
   box-shadow: 0px 6px 30px #000;
   
@@ -73,8 +74,6 @@ body{
 }
 .song-details{
   text-align: center;
-  margin: 9px 0;
-  margin: 38px 0;
   color: var(--water-green);
 }
 .song-details .name{
@@ -98,7 +97,7 @@ body{
   border-radius: inherit;
   background: linear-gradient(90deg, var(--green) 0%, var(--water-green));
 }
-.progress-bar::before{
+.progress-bar::before {
   content: "";
   position: absolute;
   height: 12px;
@@ -111,7 +110,7 @@ body{
   opacity: 0;
   transition: opacity 0.2s ease;
 }
-.progress-area:hover .progress-bar::before{
+.progress-area:hover .progress-bar::before {
   opacity: 1;
 }
 .progress-area .timer{
@@ -122,7 +121,7 @@ body{
   color: var(--lightblack);
 }
 .controls{
-  margin: 40px 30px -4px 30px;
+  margin: 5px 0px -30px 0px;
 }
 .controls i{
   font-size: 40px;
@@ -131,4 +130,15 @@ body{
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.volume-panel{
+  display: contents;
+  cursor: pointer;
+}
+.po{
+  height: -1px;
+  width: 50px;
+  margin-left: -53px;
+  text-align: center;
+  font-size: 30px;
 }
